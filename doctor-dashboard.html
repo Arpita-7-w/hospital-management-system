@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctor dashboard — Hospital Management System</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="brand-cross"></span>Hospital Management System</a>
+    <div class="nav-links" id="navLinks"></div>
+  </div>
+</nav>
+
+<main class="page">
+  <div class="container">
+    <section class="hero">
+      <h1 id="welcomeName">Welcome</h1>
+      <p id="welcomeSub"></p>
+    </section>
+
+    <section class="stats">
+      <div class="stat">
+        <span class="stat-num" id="statTotal">0</span>
+        <span class="stat-label">Total requests</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" id="statPending">0</span>
+        <span class="stat-label">Waiting for you</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" id="statConfirmed">0</span>
+        <span class="stat-label">Confirmed</span>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Appointment requests</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Patient</th>
+              <th>Contact</th>
+              <th>Date &amp; time</th>
+              <th>Reason</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="apptBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">Hospital Management System · a student project</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

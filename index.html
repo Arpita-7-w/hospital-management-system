@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital Management System</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="brand-cross"></span>Hospital Management System</a>
+    <div class="nav-links" id="navLinks"></div>
+  </div>
+</nav>
+
+<main class="page">
+  <div class="container">
+    <section class="hero">
+      <h1>Care that's easy to manage.</h1>
+      <p>Doctors review and respond to appointment requests. Patients book visits in a minute. Choose your portal to get started.</p>
+    </section>
+
+    <section class="portal-grid">
+      <article class="portal-card">
+        <span class="tag">For doctors</span>
+        <h2>Doctor portal</h2>
+        <p>See appointment requests, accept or decline them, and keep track of your schedule.</p>
+        <div class="portal-actions">
+          <a class="btn btn-primary" href="doctor-auth.html">Log in</a>
+          <a class="btn btn-ghost" href="doctor-auth.html?tab=register">Register</a>
+        </div>
+      </article>
+
+      <article class="portal-card">
+        <span class="tag">For patients</span>
+        <h2>Patient portal</h2>
+        <p>Pick a doctor, choose a date and time, and follow the status of your appointments.</p>
+        <div class="portal-actions">
+          <a class="btn btn-primary" href="patient-auth.html">Log in</a>
+          <a class="btn btn-ghost" href="patient-auth.html?tab=register">Register</a>
+        </div>
+      </article>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">Hospital Management System · a student project</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

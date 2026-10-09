@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient portal — Hospital Management System</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-role="patient">
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="brand-cross"></span>Hospital Management System</a>
+    <div class="nav-links" id="navLinks"></div>
+  </div>
+</nav>
+
+<main class="auth-wrap">
+  <div class="panel">
+    <h2>Patient portal</h2>
+    <p>Log in, or create a patient account.</p>
+
+    <div class="tabs">
+      <button type="button" class="tab active" data-target="loginForm">Log in</button>
+      <button type="button" class="tab" data-target="registerForm">Register</button>
+    </div>
+
+    <!-- LOGIN -->
+    <form id="loginForm" novalidate>
+      <div class="alert" id="loginAlert"></div>
+      <div class="field">
+        <label for="lEmail">Email</label>
+        <input type="email" id="lEmail" placeholder="you@example.com" autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="lPassword">Password</label>
+        <input type="password" id="lPassword" placeholder="Your password" autocomplete="current-password">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Log in</button>
+    </form>
+
+    <!-- REGISTER -->
+    <form id="registerForm" class="hidden" novalidate>
+      <div class="alert" id="registerAlert"></div>
+      <div class="field">
+        <label for="rName">Full name</label>
+        <input type="text" id="rName" placeholder="Jane Doe" autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="rEmail">Email</label>
+        <input type="email" id="rEmail" placeholder="you@example.com" autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="rAge">Age</label>
+        <input type="number" id="rAge" min="0" max="120" placeholder="e.g. 24">
+      </div>
+      <div class="field">
+        <label for="rPhone">Phone number</label>
+        <input type="tel" id="rPhone" placeholder="e.g. 01700000000" autocomplete="tel">
+      </div>
+      <div class="field">
+        <label for="rPassword">Password</label>
+        <input type="password" id="rPassword" placeholder="At least 6 characters" autocomplete="new-password">
+      </div>
+      <div class="field">
+        <label for="rConfirm">Confirm password</label>
+        <input type="password" id="rConfirm" placeholder="Re-enter password" autocomplete="new-password">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Create patient account</button>
+    </form>
+
+    <p class="form-note">Are you a doctor? <a href="doctor-auth.html" class="text-link">Go to doctor portal</a></p>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
